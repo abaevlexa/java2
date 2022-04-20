@@ -41,6 +41,8 @@ public class Client extends JFrame implements ActionListener,Thread.UncaughtExce
        userList.setListData(users);
        spUsers.setPreferredSize(new Dimension(100, 0));
        cbAlwaysOnTop.addActionListener(this);
+       btnSend.addActionListener(this);
+       tfMessage.addActionListener(this);
 
        panelTop.add(tfIPAddress);
        panelTop.add(tfPort);
